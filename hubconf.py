@@ -194,7 +194,7 @@ import torch.optim as optim
 #   return mynn
     
 def hello():
-  print("hello world")
+  return "hello world from hubconf"
 
 
 
