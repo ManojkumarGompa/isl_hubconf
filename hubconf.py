@@ -206,6 +206,8 @@ def get_data(*args,**kwargs):
     split_d=kwargs["split_d"]
     if type_d=="scikit-mnist-digits":
       train_p,test_p=split_d=split_d.split('-')
+      train_p,test_p=int(train_p),int(test_p)
+      print(train_p,test_p)
       digits = fetch_openml(name="mnist_784", version=1)
       X,Y=digits.data,digits.target
       train_data, test_data, train_labels, test_labels = train_test_split(digits.data, digits.target, test_size=test_p/100, random_state=42)
