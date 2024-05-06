@@ -197,7 +197,7 @@ def hello():
   return "hello world from hubconf"
 
 def get_data(*args,**kwargs):
-  if type=="scikit-mnist-digits":
+  
     print(*args)
     print("kwargs",**kwargs)
     # train_p,test_p=split_d=split_d.split('-')
