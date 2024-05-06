@@ -192,9 +192,17 @@ import torch.optim as optim
 #     optimzer.step()
     
 #   return mynn
-    
+from sklearn.datasets import fetch_mldata    
 def hello():
   return "hello world from hubconf"
+
+def get_data(type="scikit-mnist-digits",split_d="70-30"):
+  if type=="scikit-mnist-digits":
+    train_p,test_p=split_d=split_d.split('-')
+    print(train_p,test_p)
+    train_p=int(train_p)
+    test_p=int(test_p)
+    return train_p,test_p
 
 
 
