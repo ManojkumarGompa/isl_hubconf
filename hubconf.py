@@ -201,11 +201,14 @@ def get_data(*args,**kwargs):
   
     print(args)
     print("kwargs",kwargs)
-    # train_p,test_p=split_d=split_d.split('-')
-    # print(train_p,test_p)
-    # train_p=int(train_p)
-    # test_p=int(test_p)
-    return 2,3
+    type_d=kwargs["typeof"]
+    split_d=kwargs["split]
+    if type_d=="scikit-mnist-digits":
+      train_p,test_p=split_d=split_d.split('-')
+      print(train_p,test_p)
+      train_p=int(train_p)
+      test_p=int(test_p)
+      return 2,3
 
 
 
