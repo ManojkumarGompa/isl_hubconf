@@ -199,8 +199,8 @@ def hello():
 
 def get_data(*args,**kwargs):
   
-    # print(*args)
-    print("kwargs",**kwargs)
+    print(args)
+    print("kwargs",kwargs)
     # train_p,test_p=split_d=split_d.split('-')
     # print(train_p,test_p)
     # train_p=int(train_p)
