@@ -194,6 +194,7 @@ import torch.optim as optim
 #   return mynn
     
 def hello():
+  print("in the endpoint")
   return "hello world from hubconf"
 
 def get_data(*args,**kwargs):
