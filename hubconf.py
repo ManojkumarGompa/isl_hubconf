@@ -196,7 +196,7 @@ import torch.optim as optim
 def hello():
   return "hello world from hubconf"
 
-def get_data(type="scikit-mnist-digits",split_d="70-30"):
+def get_data(*args,**kwargs):
   if type=="scikit-mnist-digits":
     print(*args)
     print("kwargs",**kwargs)
