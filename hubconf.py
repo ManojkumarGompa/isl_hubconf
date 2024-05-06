@@ -192,7 +192,7 @@ import torch.optim as optim
 #     optimzer.step()
     
 #   return mynn
-from sklearn.datasets import fetch_mldata    
+    
 def hello():
   return "hello world from hubconf"
 
