@@ -198,11 +198,13 @@ def hello():
 
 def get_data(type="scikit-mnist-digits",split_d="70-30"):
   if type=="scikit-mnist-digits":
-    train_p,test_p=split_d=split_d.split('-')
-    print(train_p,test_p)
-    train_p=int(train_p)
-    test_p=int(test_p)
-    return train_p,test_p
+    print(*args)
+    print("kwargs",**kwargs)
+    # train_p,test_p=split_d=split_d.split('-')
+    # print(train_p,test_p)
+    # train_p=int(train_p)
+    # test_p=int(test_p)
+    return 2,3
 
 
 
